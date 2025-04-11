@@ -10,13 +10,14 @@ export default function About() {
             <span className="font-semibold text-indigo-600">
               REST Countries API
             </span>{" "}
-            to show information about countries.
+            to show information of countries.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            Explore our data to learn about countries names, capitals, regions,
-            populations, flags, and much more. Whether you’re curious about a
-            particular country or looking for insights about global regions, our
-            interactive explorer makes it easy.
+            Explore to learn about countries names, capitals, regions, areas,
+            currencies, populations, languages, flags, and much more. 
+            Whether you’re curious for particular country or looking for
+            insights about global regions, the app makes it easy for 
+            exploring countries.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
             Our goal is to build a fully responsive and modern web application
