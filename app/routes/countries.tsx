@@ -51,7 +51,7 @@ export default function Countries({ loaderData }: Route.ComponentProps) {
       {filteredCountries.length === 0 ? (
         <div> No countries matched. </div>
       ) : (
-        <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <ul className="grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-6">
           {filteredCountries.map((country: any) => (
             <li
               key={country.cca3}
@@ -65,7 +65,8 @@ export default function Countries({ loaderData }: Route.ComponentProps) {
               </Link>
               <div className="text-gray-600 text-sm mt-1">
                 Region: {country.region} <br />
-                Population: {country.population.toLocaleString()}
+                Population: {country.population.toLocaleString()} <br />
+                Area: {country.area} km <sup>2</sup>
               </div>
             </li>
           ))}
