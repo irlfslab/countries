@@ -57,7 +57,7 @@ export default function Country({ loaderData }: Route.ComponentProps) {
           </p>
           <p>
             <span className="text-xl text-black-200 font-bold">Languages:</span>
-            {langs.map(lang => (
+            {langs.map((lang: any) => (
              <li key={lang}>{lang}</li>
             ))}
           </p>
