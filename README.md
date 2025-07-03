@@ -1,87 +1,62 @@
-# Welcome to React Router!
+# Mini REST Countries Explorer
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A cool, interactive web application that lets you explore country data using the new **React Router V7.5** framework. This project fetches data from the [REST Countries API] and allows you to filter and view detailed information about countries, including their names, capitals, regions, populations, flags,  currencies, languages and country size.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## Table of Contents
+
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
 
 ## Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+- **Dynamic Routing:** Leverages React Router V7.5 to handle multiple routes and dynamic URL parameters.
+- **Data Fetching:** Uses route loaders to retrieve country data from the REST Countries API.
+- **Search & Filter:** Users can search for countries by name and filter by region.
+- **Responsive UI:** Styled with Tailwind CSS to create a modern, responsive interface.
+- **Modular Code:** Organized into reusable components for easy maintenance.
 
-## Getting Started
+## Demo
 
-### Installation
+_Link to Demo:_  
+[Live Demo](#)  
+_(Replace `#` with your live demo link when available)_
 
-Install the dependencies:
+## Installation
 
-```bash
-npm install
-```
+1. **Install dependencies:**
 
-### Development
+   ```bash
+   npm install
+   ```
 
-Start the development server with HMR:
+2. **Run the development server:**
 
-```bash
-npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 
-Your application will be available at `http://localhost:5173`.
+3. **Open your browser and navigate to:**
 
-## Building for Production
+   ```
+   http://localhost:5173
+   ```
 
-Create a production build:
+## Usage
 
-```bash
-npm run build
-```
+- **Home Page:** Get an introduction to the project.
+- **Countries Page:** View a list of all countries. Use the search input to filter by name and select a region from the dropdown to narrow down the results.
+- **Country Detail Page:** Click on any country to see detailed information, including a country flag, official name, capital, region, subregion, population, currencies, languages and country size.
+- **About Page:** Learn more about how the app uses the REST Countries API to display data.
 
-## Deployment
 
-### Docker Deployment
+## Technologies Used
 
-To build and run using Docker:
+- **React:** JavaScript library for building user interfaces.
+- **React Router V7.5:** For handling routing and navigation.
+- **TypeScript:** Provides static typing for a more maintainable codebase.
+- **Tailwind CSS:** Utility-first CSS framework for styling.
+- **Vite:** Fast development server and build tool.
 
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
